@@ -10,7 +10,8 @@ body {
 h2 {
     font-size: 50px;
     padding-left: 140px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
+    padding-top: 7%;
 }
 
 .cards {
