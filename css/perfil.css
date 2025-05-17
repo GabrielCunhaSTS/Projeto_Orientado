@@ -1,3 +1,7 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .perfil {
     width: 100%;
     display: flex;
@@ -39,8 +43,6 @@ section.sobreMim,  section.linguagens {
     display: flex;
     align-items: center;
     margin-top: 8px;
-    text-decoration: none;
-    color: inherit;
 }
 
 .icon span {
@@ -95,6 +97,15 @@ section.sobreMim,  section.linguagens {
     border-radius: 10px;
     padding: 20px;
     width: 90%;
+}
+
+.card-certificado a {
+    width: 9%;
+}
+
+.card-certificado:hover {
+    transform: scale(1.03);
+    transition: transform 0.4s;
 }
 
 .card-certificado img.certificado {

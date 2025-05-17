@@ -21,26 +21,35 @@
         </nav>
     </header>
 
-    <section>
-        <form action="">
-            <label for="">Nome:</label>
-            <input type="text">
-            <label for="">Email:</label>
-            <input type="text">
-            <label for="">Motivo do contato:</label>
-            <select name="" id="">
-                <option value="">Selecione o motivo</option>
-                <option value="">a</option>
-                <option value="">b</option>
-                <option value="">c</option>
-                <option value="">d</option>
-                <option value="">e</option>
-            </select>
-            <label for="">Mensagem:</label>
-            <textarea name="" id="" style="resize: none;"></textarea>
-            <button>Enviar</button>
+    <section class="projetoOrientado">
+        <h2>Entre em Contato</h2>
+
+        <form method="POST">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="motivo">Motivo do contato:</label>
+                <select class="motivos" id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Selecione o motivo</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="trabalho">Trabalho</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="parceria">Parceria</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+
+            <button type="submit">Enviar</button>
         </form>
-    
     </section>
 </body>
 </html>
