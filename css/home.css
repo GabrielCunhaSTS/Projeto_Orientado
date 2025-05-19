@@ -1,8 +1,32 @@
+/* 
+Lista de propriedades CSS pesquisadas e seus papéis:
+------------------------------------------------------------------------------------------------------------------------------
+1. display: block;
+    - Define o elemento como um bloco, ocupando toda a largura disponível.
+    - Comum em elementos como `<div>`, `<p>`, `<section>` etc.
+
+2. display: grid;
+    - Define o elemento como um container de grade (grid), permitindo organizar filhos em linhas e colunas.
+
+3. grid-template-columns: repeat(3, 1fr);
+    - Define que o grid terá 3 colunas com larguras iguais (1fr = uma fração do espaço disponível).
+
+4. background-color: transparent;
+    - Define o fundo do elemento como transparente, ou seja, sem cor de fundo visível.
+
+5. cursor: default;
+    - Define o cursor padrão (seta) ao passar sobre o elemento.
+    - Usado quando não se deseja indicar interatividade (como links ou botões).
+------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
+#alunos{
     font-size: 80px;
     padding-left: 120px;
 }
@@ -12,13 +36,13 @@ p {
     padding-left: 150px;
 }
 
-.projetoOrientado h1 {
+#projetoOrientado h1 {
     text-align: left;
     width: 30%;
     font-size: 120px;
 }
 
-.projetoOrientado img {
+#projetoOrientado img {
     width: 50%;
 }
 
@@ -89,7 +113,9 @@ figcaption li {
     width: 100%;
 }
 
-.linguagens button {
+.linguagens span {
+    display: flex;
+    justify-content: center;
     background-color: transparent;
     color: #fff;
     border: 2px solid #0029AE;
@@ -101,7 +127,7 @@ figcaption li {
     transition: background-color 0.5s;
 }
 
-.linguagens button:hover {
+.linguagens span:hover {
     background-color: #0f2c8c;
     transform: scale(1.1);
     transition: 0.5s;

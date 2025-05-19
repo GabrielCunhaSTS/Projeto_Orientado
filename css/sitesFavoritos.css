@@ -1,3 +1,31 @@
+/*
+Lista de propriedades CSS pesquisadas e seus papéis:
+------------------------------------------------------------------------------------------------------------------------------
+1. display: flex;
+   - Ativa o Flexbox, permitindo o controle da organização dos elementos filhos (neste caso, dentro da <figure>).
+   - Necessário para que as demais propriedades de alinhamento funcionem.
+
+2. flex-direction: column;
+   - Organiza os elementos filhos em uma coluna vertical.
+
+3. align-items: center;
+   - Alinha os elementos filhos horizontalmente ao centro da <figure>.
+
+4. justify-content: space-evenly;
+   - Distribui os elementos filhos verticalmente com espaçamento igual entre eles.
+
+5. overflow: hidden;
+   - Oculta qualquer conteúdo que ultrapasse o limite da <figure>.
+   - Útil em conjunto com o `transform: scale()` no hover, para evitar que a imagem "vaze" da borda do card.
+
+6. transform: scale(1.1);
+    - Aplica uma transformação de escala ao elemento, aumentando seu tamanho em 10%.
+    - Muito usada em efeitos de hover para dar sensação de interação/zoom.
+------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
     background-image: linear-gradient(to bottom, rgba(0, 2, 32, 0.15), #000220), url("../img/fundo.png");
     background-size: cover;
@@ -20,6 +48,15 @@ h2 {
     justify-content: center; 
     gap: 100px;
     margin-bottom: 60px;
+}
+
+#seção-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    gap: 60px;
+    padding: 100px 0 60px 100px;
 }
 
 figure {

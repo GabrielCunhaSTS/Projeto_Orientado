@@ -1,3 +1,12 @@
+/* 
+Lista de propriedades CSS pesquisadas e seus papéis:
+------------------------------------------------------------------------------------------------------------------------------
+1. justify-content: space-between;
+    - Distribui os itens do container flex ou grid com o máximo de espaço possível entre eles.
+    - O primeiro item fica alinhado à esquerda, o último à direita e os demais são espaçados igualmente no meio.
+------------------------------------------------------------------------------------------------------------------------------
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
         
 * {
@@ -37,7 +46,7 @@ a {
     width: 90px;
 }
 
-.projetoOrientado {
+#projetoOrientado {
     background-image: linear-gradient(to bottom, rgba(0, 2, 32, 0.15), #000220), url("../img/fundo.png");
     background-size: cover;
     background-position: top center;
@@ -45,7 +54,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
 }
 
 .pageContainer {

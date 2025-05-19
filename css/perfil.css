@@ -1,3 +1,46 @@
+/*
+Lista de propriedades CSS pesquisadas e seus papéis:
+------------------------------------------------------------------------------------------------------------------------------
+1. justify-content: space-around;
+   - Distribui os itens filhos com espaços iguais ao redor dentro de um container flex.
+   - Deixa espaço antes, entre e depois dos itens.
+
+2. object-fit: cover;
+   - Faz com que imagens preencha totalmente o container sem distorcer.
+   - Pode cortar partes da imagem para manter a proporção.
+
+3. line-height: 1.6;
+   - Define o espaçamento vertical entre linhas de texto.
+   - Um valor de 1.6 melhora a legibilidade dos parágrafos.
+
+4. text-align: justify;
+   - Alinha o texto nas bordas esquerda e direita.
+   - Cria blocos de texto alinhados, com espaçamento automático entre palavras.
+
+5. gap: 30px;
+   - Define o espaçamento entre elementos filhos dentro de um container `flex` ou `grid`.
+   - Substitui o uso de margens manuais entre os itens.
+
+6. flex: 1;
+   - Faz com que o elemento cresça e ocupe todo o espaço disponível dentro do container `flex`.
+   - Usado para distribuir espaço proporcionalmente entre itens.
+
+7. cursor: pointer;
+   - Muda o cursor para uma mãozinha ao passar sobre o elemento.
+   - Indica que o item é clicável (botão, link etc.).
+
+8. flex-direction: row;
+   - Define a direção dos itens dentro de um container `flex` como horizontal (da esquerda para a direita).
+   - É o padrão de direção, mas útil para sobrescrever direções verticais.
+
+9. width: fit-content;
+   - Faz com que o elemento se ajuste automaticamente à largura de seu conteúdo.
+   - Ideal para botões e caixas que não devem ocupar largura total do container.
+------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -23,18 +66,18 @@ figure {
     object-fit: cover;
 }
 
-.perfil-aluno h3 {
+#perfil-aluno h3 {
     font-size: 60px;
     margin-bottom: 10px;
 }
 
-.perfil-aluno p {
+#perfil-aluno p {
     font-size: 30px;
     margin: 4px 0;
     color: #ccc;
 }
 
-section.sobreMim,  section.linguagens {
+div.sobreMim,  div.linguagens {
     width: 80%;
     margin: 40px auto;
 }
@@ -130,9 +173,11 @@ section.sobreMim,  section.linguagens {
     color: #ccc;
 }
 
-.card-certificado button {
+.botao{
     width: 90%;
     padding: 10px 20px;
+    display: flex;
+    justify-content: center;
     background-color: #007bff;
     color: #fff;
     font-size: 16px;
@@ -142,7 +187,7 @@ section.sobreMim,  section.linguagens {
     cursor: pointer;
 }
 
-.card-certificado button:hover {
+.botao:hover {
     background-color: #0029AE;
     transform: scale(1.1);
     transition: 0.5s;

@@ -1,7 +1,6 @@
-/* Lista de propriedades CSS pesquisadas e seus papéis:
-
-tabelasCuriosidades.css:
-
+/* 
+Lista de propriedades CSS pesquisadas e seus papéis:
+------------------------------------------------------------------------------------------------------------------------------
 1. background-size: cover;
    - Faz a imagem de fundo cobrir toda a área visível do elemento, mantendo a proporção.
    -Corta parte da imagem para preencher totalmente o espaço.
@@ -18,119 +17,10 @@ tabelasCuriosidades.css:
 
 5. border-spacing: 30px;
    - Define um espaçamento de 30px entre as células da tabela, melhorando a legibilidade visual.
-
 ------------------------------------------------------------------------------------------------------------------------------
-
-sitefavoritos.css:
-
-1. display: flex;
-   - Ativa o Flexbox, permitindo o controle da organização dos elementos filhos (neste caso, dentro da <figure>).
-   - Necessário para que as demais propriedades de alinhamento funcionem.
-
-2. flex-direction: column;
-   - Organiza os elementos filhos em uma coluna vertical.
-
-3. align-items: center;
-   - Alinha os elementos filhos horizontalmente ao centro da <figure>.
-
-4. justify-content: space-evenly;
-   - Distribui os elementos filhos verticalmente com espaçamento igual entre eles.
-
-5. overflow: hidden;
-   - Oculta qualquer conteúdo que ultrapasse o limite da <figure>.
-   - Útil em conjunto com o `transform: scale()` no hover, para evitar que a imagem "vaze" da borda do card.
-
-6. transform: scale(1.1);
-    - Aplica uma transformação de escala ao elemento, aumentando seu tamanho em 10%.
-    - Muito usada em efeitos de hover para dar sensação de interação/zoom.
-
-------------------------------------------------------------------------------------------------------------------------------
-
-perfil.css:
-
-1. justify-content: space-around;
-   - Distribui os itens filhos com espaços iguais ao redor dentro de um container flex.
-   - Deixa espaço antes, entre e depois dos itens.
-
-2. object-fit: cover;
-   - Faz com que imagens preencha totalmente o container sem distorcer.
-   - Pode cortar partes da imagem para manter a proporção.
-
-3. line-height: 1.6;
-   - Define o espaçamento vertical entre linhas de texto.
-   - Um valor de 1.6 melhora a legibilidade dos parágrafos.
-
-4. text-align: justify;
-   - Alinha o texto nas bordas esquerda e direita.
-   - Cria blocos de texto alinhados, com espaçamento automático entre palavras.
-
-5. gap: 30px;
-   - Define o espaçamento entre elementos filhos dentro de um container `flex` ou `grid`.
-   - Substitui o uso de margens manuais entre os itens.
-
-6. flex: 1;
-   - Faz com que o elemento cresça e ocupe todo o espaço disponível dentro do container `flex`.
-   - Usado para distribuir espaço proporcionalmente entre itens.
-
-7. cursor: pointer;
-   - Muda o cursor para uma mãozinha ao passar sobre o elemento.
-   - Indica que o item é clicável (botão, link etc.).
-
-8. flex-direction: row;
-   - Define a direção dos itens dentro de um container `flex` como horizontal (da esquerda para a direita).
-   - É o padrão de direção, mas útil para sobrescrever direções verticais.
-
-9. width: fit-content;
-   - Faz com que o elemento se ajuste automaticamente à largura de seu conteúdo.
-   - Ideal para botões e caixas que não devem ocupar largura total do container.
-
-------------------------------------------------------------------------------------------------------------------------------
-
-contato.css:
-
-1. resize: none;
-    - Impede que o usuário redimensione manualmente um `<textarea>`.
-    - Útil para manter o layout fixo em formulários.
-
-2. transition: 0.5s;
-    - Define uma transição suave de 0.5 segundos para mudanças em propriedades CSS.
-    - Usado junto com `transform`, `background-color`, entre outros, para criar animações.
-
-3. align-items: flex-start;
-    - Alinha os itens filhos de um container flex no início do eixo vertical (topo).
-    - Alinhamento padrão quando se deseja conteúdo "colado" ao topo do container.
-
-4. z-index: 2;
-    - Controla a sobreposição dos elementos na tela.
-    - Elementos com `z-index` maior ficam acima dos com `z-index` menor.
-
-------------------------------------------------------------------------------------------------------------------------------
-
-home.css:
-
-1. display: block;
-    - Define o elemento como um bloco, ocupando toda a largura disponível.
-    - Comum em elementos como `<div>`, `<p>`, `<section>` etc.
-
-2. display: grid;
-    - Define o elemento como um container de grade (grid), permitindo organizar filhos em linhas e colunas.
-
-3. grid-template-columns: repeat(3, 1fr);
-    - Define que o grid terá 3 colunas com larguras iguais (1fr = uma fração do espaço disponível).
-
-4. background-color: transparent;
-    - Define o fundo do elemento como transparente, ou seja, sem cor de fundo visível.
-
-5. cursor: default;
-    - Define o cursor padrão (seta) ao passar sobre o elemento.
-    - Usado quando não se deseja indicar interatividade (como links ou botões).
-
-------------------------------------------------------------------------------------------------------------------------------
-
-1. justify-content: space-between;
-    - Distribui os itens do container flex ou grid com o máximo de espaço possível entre eles.
-    - O primeiro item fica alinhado à esquerda, o último à direita e os demais são espaçados igualmente no meio.
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body{
     background-image: linear-gradient(to bottom, rgba(0, 2, 32, 0.15), #000220), url("../img/fundo.png");
@@ -140,7 +30,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-table {
+#tabela {
     margin: 0 auto 60px auto;
     border-spacing: 30px;
     width: 80%;
@@ -172,8 +62,7 @@ tbody tr:hover td {
     transition: 0.3s;
 }
 
-
-.header{
+.titulo-curiosidade{
     color: #fff;
     background-color: #0029AE;
     font-size: 22px;
